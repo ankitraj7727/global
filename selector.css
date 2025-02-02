@@ -1,0 +1,42 @@
+
+*{ 
+    margin:4  px;
+    padding: 10x;
+}
+#ba{
+        color:rgb(226, 83, 43);text-transform: uppercase ;
+           font-size: 50px; 
+           border: 2px dashed rgb(255, 0, 221); 
+           border-radius: 20px ; 
+          padding-left: 10px;
+          padding-right: 100px;
+          text-align: center;
+        
+  }
+  .ac{
+    color: rgb(89, 255, 0);
+font-size: 40px;
+text-transform: uppercase;
+text-decoration: underline;
+border: 2px dashed rgb(0, 136, 255);
+border-radius: 20px;
+margin-right: 100px;
+margin-left: 100px;
+text-align: center;}
+p  { 
+    color: rgb(255, 0, 200);border: dashed 2px darkgreen;border-radius: 2px; text-align: center;text-decoration:solid;}
+ h3 {
+    color: blue;font-size: 60px;text-align: center;border: 2px dashed;border-radius: 20px;
+ }
+ .cars
+ {
+    border: 2px solid black;
+    border-radius: 20px;
+
+ }
+
+ .veg {
+        border: 2px solid black;
+        border-radius: 20px;
+        margin-left: 100px;
+      }

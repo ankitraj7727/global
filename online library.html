@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MindShelf - Your Book Haven</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2 {
+    color: #6a5acd;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #6a5acd;
+    color: white;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a5acd;
+    padding: 20px;
+    color: white;
+}
+
+.navbar .logo h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    font-size: 1.1rem;
+}
+
+nav ul li a {
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #574b8a;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+.section {
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.category-list li {
+    font-size: 1.2rem;
+}
+
+.category-list li a {
+    padding: 10px 20px;
+    background-color: #6a5acd;
+    color: white;
+    border-radius: 5px;
+}
+
+.category-list li a:hover {
+    background-color: #574b8a;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.review {
+    background-color: #eaeaea;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    background-color: #6a5acd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #574b8a;
+}
+
+</style>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>MindShelf</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="online library.html">Home</a></li>
+                    <li><a href="categories library.html">Categories</a></li>
+                    <li><a href="reviews library.html">Reviews</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="content">
+            <h2>Welcome to MindShelf</h2>
+            <p>Your one-stop destination for discovering and reading books from various genres.</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section">
+        <div class="content">
+            <h2>Book Categories</h2>
+            <p>Explore our wide selection of book categories to find your next favorite read!</p>
+            <ul class="category-list">
+                <li><a href="#">Love</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Science Fiction</a></li>
+                <li><a href="#">Fantasy</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="content">
+            <h2>What Our Readers Say</h2>
+            <p>Check out some of the amazing feedback from our readers:</p>
+            <div class="reviews">
+                <div class="review">
+                    <p>"MindShelf offers a fantastic variety of books, and the website is so easy to navigate!" - Sarah</p>
+                </div>
+                <div class="review">
+                    <p>"I found some of the best adventure novels here! Can't wait to explore more." - James</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="section">
+        <div class="content">
+            <h2>Login to MindShelf</h2>
+            <form action="#" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; contact no-88490***** &nbsp; &nbsp; email-xyz@gmail.com.</p>
+    </footer>
+</body>
+</html>

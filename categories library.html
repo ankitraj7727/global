@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6a5acd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Category Section */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.category {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%;
+    margin: 10px;
+    text-align: center;
+}
+
+.category h2 {
+    font-size: 1.8rem;
+    color: #6a5acd;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+ul li::before {
+    content: "📖 ";
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+</style>
+<body>
+
+    <header>
+        <h1>Book Categories</h1>
+    </header>
+
+    <section class="categories">
+        <div class="category">
+            <h2>Love</h2>
+            <ul>
+                <li>Pride and Prejudice by Jane Austen</li>
+                <li>The Notebook by Nicholas Sparks</li>
+                <li>Me Before You by Jojo Moyes</li>
+                <li>The Fault in Our Stars by John Green</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Adventure</h2>
+            <ul>
+                <li>Into the Wild by Jon Krakauer</li>
+                <li>Journey to the Center of the Earth by Jules Verne</li>
+                <li>The Hobbit by J.R.R. Tolkien</li>
+                <li>The Call of the Wild by Jack London</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Science Fiction</h2>
+            <ul>
+                <li>Dune by Frank Herbert</li>
+                <li>Neuromancer by William Gibson</li>
+                <li>Foundation by Isaac Asimov</li>
+                <li>The Martian by Andy Weir</li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>Fantasy </h2>
+            <ul>
+                <li>The Hobbit by J.R.R. Tolkien</li>
+                <li>Eragon by Christopher Paolini</li>
+                <li>The Lies of Locke Lamora by Scott Lynch</li>
+                <li>The Way of Kings by Brandon Sanderson</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
+

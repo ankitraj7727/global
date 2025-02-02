@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindShelf - Review Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar Styling */
+header {
+    background-color: #6a0dad; /* Violet background */
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f7a600; /* Yellow color on hover */
+}
+
+/* Review Section Styling */
+.review-section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.review-form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f2f1f8; /* Light violet shade */
+}
+
+.review-form-container h2 {
+    font-size: 2rem;
+    color: #6a0dad; /* Violet title */
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #6a0dad; /* Violet background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4b0072; /* Darker violet on hover */
+}
+
+/* Reviews Display */
+.reviews-display {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.reviews-display h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #6a0dad; /* Violet color for the title */
+}
+
+.review-item {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-item h4 {
+    font-size: 1.2rem;
+    color: #6a0dad;
+    margin-bottom: 5px;
+}
+
+.review-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+}
+
+</style>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1 class="logo">MindShelf</h1>
+        <nav>
+            <ul>
+                <li><a href="online library.html">Home</a></li>
+                <li><a href="categories library.html">Categories</a></li>
+                <li><a href="reviews library.html">Reviews</a></li>
+                <li><a href="online library.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Review Form Section -->
+    <section class="review-section" id="reviews">
+        <div class="review-form-container">
+            <h2>Share Your Review</h2>
+            <form id="reviewForm" onsubmit="submitReview(event)">
+                <input type="text" id="userName" name="userName" placeholder="Your Name" required>
+                <input type="text" id="bookTitle" name="bookTitle" placeholder="Book Title" required>
+                <textarea id="userReview" name="userReview" placeholder="Write your review..." rows="4" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>  
+</body>
+</html>
